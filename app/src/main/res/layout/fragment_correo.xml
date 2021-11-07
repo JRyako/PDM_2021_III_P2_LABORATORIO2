@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/fondo_1"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".CorreoFragment">
@@ -14,12 +14,13 @@
         android:id="@+id/txvTitulos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="monospace"
         android:text="Seleccionar Alumno:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="25dp"
-        android:textStyle="bold|italic"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:textStyle="bold|italic" />
 
     <Spinner
         android:id="@+id/spinnerAlumno"
@@ -32,12 +33,13 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="monospace"
         android:text="Para:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="25dp"
-        android:textStyle="bold|italic"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:textStyle="bold|italic" />
 
     <EditText
         android:id="@+id/fraPara"
@@ -48,12 +50,13 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="monospace"
         android:text="Asunto:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="25dp"
-        android:textStyle="bold|italic"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:textStyle="bold|italic" />
 
     <EditText
         android:id="@+id/fraAsunto"
@@ -64,12 +67,13 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="monospace"
         android:text="Mensaje:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="25dp"
-        android:textStyle="bold|italic"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:textStyle="bold|italic" />
 
     <EditText
         android:id="@+id/fraMensaje"
@@ -83,6 +87,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:fontFamily="monospace"
         android:text="Buscar"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
@@ -95,6 +100,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:fontFamily="monospace"
         android:text="Enviar"
         android:textAlignment="center"
         android:textColor="#FFFFFF"

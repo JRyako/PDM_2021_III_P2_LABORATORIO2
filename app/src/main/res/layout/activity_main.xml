@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/logo_ujcv"
     tools:context=".MainActivity">
 
 
@@ -16,6 +16,7 @@
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="77dp"
         android:backgroundTint="#F4511E"
+        android:fontFamily="monospace"
         android:text="Clase"
         app:icon="@drawable/presentacion"
         app:iconSize="25dp"
@@ -25,37 +26,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnAlumno"
+        android:id="@+id/btnNotas"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="21dp"
-        android:layout_marginBottom="77dp"
-        android:backgroundTint="#F4511E"
-        android:text="Alumno"
-        app:icon="@drawable/graduacion"
-        app:iconSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnMatricula"
-        app:layout_constraintEnd_toStartOf="@+id/btnClases"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnMatricula"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginEnd="21dp"
+        android:layout_marginEnd="36dp"
         android:layout_marginBottom="81dp"
         android:backgroundTint="#F4511E"
-        android:text="Matricula"
-        app:icon="@drawable/prueba"
+        android:fontFamily="monospace"
+        android:text="Ingresar notas"
+        app:icon="@drawable/notas"
         app:iconSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnEnviarNotas"
-        app:layout_constraintEnd_toStartOf="@+id/btnNotas"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAlumno" />
+        app:layout_constraintBottom_toTopOf="@+id/btnEnviarMatricula"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMatricula"
+        app:layout_constraintTop_toBottomOf="@+id/btnClases" />
 
     <Button
         android:id="@+id/btnEnviarNotas"
@@ -65,6 +49,7 @@
         android:layout_marginEnd="21dp"
         android:layout_marginBottom="273dp"
         android:backgroundTint="#F4511E"
+        android:fontFamily="monospace"
         android:text="Enviar notas"
         app:icon="@drawable/enviar_correo"
         app:iconSize="25dp"
@@ -80,6 +65,7 @@
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="273dp"
         android:backgroundTint="#F4511E"
+        android:fontFamily="monospace"
         android:text="Enviar matricula"
         app:icon="@drawable/enviar_correo"
         app:iconSize="25dp"
@@ -89,17 +75,38 @@
         app:layout_constraintTop_toBottomOf="@+id/btnNotas" />
 
     <Button
-        android:id="@+id/btnNotas"
+        android:id="@+id/btnMatricula"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="21dp"
         android:layout_marginBottom="81dp"
         android:backgroundTint="#F4511E"
-        android:text="Ingresar notas"
-        app:icon="@drawable/notas"
+        android:fontFamily="monospace"
+        android:text="Matricula"
+        app:icon="@drawable/prueba"
         app:iconSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnEnviarMatricula"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnMatricula"
-        app:layout_constraintTop_toBottomOf="@+id/btnClases" />
+        app:layout_constraintBottom_toTopOf="@+id/btnEnviarNotas"
+        app:layout_constraintEnd_toStartOf="@+id/btnNotas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlumno" />
+
+    <Button
+        android:id="@+id/btnAlumno"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="77dp"
+        android:backgroundTint="#F4511E"
+        android:fontFamily="monospace"
+        android:text="Alumno"
+        app:icon="@drawable/graduacion"
+        app:iconSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMatricula"
+        app:layout_constraintEnd_toStartOf="@+id/btnClases"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
