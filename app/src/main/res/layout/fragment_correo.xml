@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo_1"
+    android:background="@drawable/fondo_madera"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".CorreoFragment">
@@ -17,7 +17,7 @@
         android:fontFamily="monospace"
         android:text="Seleccionar Alumno:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textColorHint="#FFFFFF"
         android:textSize="25dp"
         android:textStyle="bold|italic" />
@@ -36,7 +36,7 @@
         android:fontFamily="monospace"
         android:text="Para:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textColorHint="#FFFFFF"
         android:textSize="25dp"
         android:textStyle="bold|italic" />
@@ -53,7 +53,7 @@
         android:fontFamily="monospace"
         android:text="Asunto:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textColorHint="#FFFFFF"
         android:textSize="25dp"
         android:textStyle="bold|italic" />
@@ -70,7 +70,7 @@
         android:fontFamily="monospace"
         android:text="Mensaje:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textColorHint="#FFFFFF"
         android:textSize="25dp"
         android:textStyle="bold|italic" />
@@ -86,7 +86,7 @@
         android:id="@+id/btnBuscar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:backgroundTint="#9C4605"
         android:fontFamily="monospace"
         android:text="Buscar"
         android:textAlignment="center"
@@ -99,7 +99,7 @@
         android:id="@+id/btnEnviar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:backgroundTint="#9C4605"
         android:fontFamily="monospace"
         android:text="Enviar"
         android:textAlignment="center"
