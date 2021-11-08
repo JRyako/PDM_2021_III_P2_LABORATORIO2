@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Ricardo/AndroidStudioProjects/PDM_2021_II_PII_LABORATORIO2/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Ricardo/AndroidStudioProjects/PDM_2021_II_PII_LABORATORIO2/app/src/main/res/layout/activity_matricula.xml" value="0.25" />
         <entry key="..\:/Users/johnn/Documents/GitHub/PDM_2021_III_P2_LABORATORIO2/app/src/main/res/layout/activity_alumno.xml" value="0.26811594202898553" />
         <entry key="..\:/Users/johnn/Documents/GitHub/PDM_2021_III_P2_LABORATORIO2/app/src/main/res/layout/activity_clases.xml" value="0.26811594202898553" />
         <entry key="..\:/Users/johnn/Documents/GitHub/PDM_2021_III_P2_LABORATORIO2/app/src/main/res/layout/activity_correo.xml" value="0.26811594202898553" />
