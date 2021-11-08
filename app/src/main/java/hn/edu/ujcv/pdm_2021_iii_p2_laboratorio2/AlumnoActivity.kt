@@ -17,7 +17,6 @@ class AlumnoActivity : AppCompatActivity() {
         btnRegresar.setOnClickListener { enviar() }
     }
 
-
     private fun enviar() {
         val intentAlumnos = Intent(this, MainActivity::class.java)
         startActivity(intentAlumnos)
@@ -39,10 +38,10 @@ class AlumnoActivity : AppCompatActivity() {
 
             Alumnos.Alumnos.put(dato.NumeroCuenta, dato)
             Toast.makeText(applicationContext, "Alumno Registrado", Toast.LENGTH_SHORT).show()
-        }
 
-        txtNumCuenta.text = null
-        txtNombre.text    = null
-        txtCorreo.text    = null
+            txtNumCuenta.text = null
+            txtNombre.text    = null
+            txtCorreo.text    = null
+        }
     }
 }

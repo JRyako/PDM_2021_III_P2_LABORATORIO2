@@ -46,13 +46,13 @@ class ClasesActivity : AppCompatActivity() {
 
             Clases.Clases.put(dato.codigo, dato)
             Toast.makeText(applicationContext, "Clase Registrada", Toast.LENGTH_LONG).show()
-        }
 
-        txtCodigo.text   = null
-        txtNombre2.text  = null
-        txtSeccion.text  = null
-        txtHora.text     = null
-        txtEdificio.text = null
-        txtAula.text     = null
+            txtCodigo.text   = null
+            txtNombre2.text  = null
+            txtSeccion.text  = null
+            txtHora.text     = null
+            txtEdificio.text = null
+            txtAula.text     = null
+        }
     }
 }

@@ -84,10 +84,10 @@ class NotasActivity : AppCompatActivity() {
             }
             var prueba = Alumnos.Matriculas
             Toast.makeText(applicationContext, "Notas Actualizadas", Toast.LENGTH_SHORT).show()
-        }
 
-        txtNota1.text = null
-        txtNota2.text = null
-        txtNota3.text = null
+            txtNota1.text = null
+            txtNota2.text = null
+            txtNota3.text = null
+        }
     }
 }
