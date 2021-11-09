@@ -23,8 +23,8 @@ class CorreoFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-    var listItems    : ArrayList<String> = ArrayList()
-    var adapterFrag  : ArrayAdapter<String>? = null
+    var listItems: ArrayList<String> = ArrayList()
+    var adapterFrag: ArrayAdapter<String>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,28 +50,28 @@ class CorreoFragment : Fragment() {
     }
 
     private fun enviarCorreo() {
-        var recipiente:  String = fraPara.text.toString()
-        var asunto:      String = fraAsunto.text.toString()
-        var mensaje:     String = fraMensaje.text.toString()
+        var recipiente: String = fraPara.text.toString()
+        var asunto: String = fraAsunto.text.toString()
+        var mensaje: String = fraMensaje.text.toString()
         val addressees = recipiente.split(",".toRegex()).toTypedArray()
-        if(recipiente.isEmpty()) {
+        if (recipiente.isEmpty()) {
             Toast.makeText(activity, "Escriba el correo destinatario", Toast.LENGTH_LONG).show()
-        }else if(asunto.isEmpty()){
+        } else if (asunto.isEmpty()) {
             Toast.makeText(activity, "Escriba el asunto del correo", Toast.LENGTH_LONG).show()
-        }else if(mensaje.isEmpty()){
+        } else if (mensaje.isEmpty()) {
             Toast.makeText(activity, "Escriba un mensaje en el correo", Toast.LENGTH_LONG).show()
-        }else {
+        } else {
             val intent = Intent(Intent.ACTION_SEND)
             var data = Uri.parse("mailto:")
             intent.putExtra(Intent.EXTRA_EMAIL, addressees)
             intent.putExtra(Intent.EXTRA_SUBJECT, asunto)
             intent.putExtra(Intent.EXTRA_TEXT, mensaje)
             intent.setType("message/rfc822")
-            startActivity(Intent.createChooser(intent,"Eliga un correo"))
+            startActivity(Intent.createChooser(intent, "Eliga un correo"))
         }
     }
-
-    companion object {
+}
+  /*  companion object {
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
@@ -82,4 +82,4 @@ class CorreoFragment : Fragment() {
                 }
             }
     }
-}
+}*/
